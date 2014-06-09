@@ -8,7 +8,9 @@
   <input name='total_moves' type='hidden' value='<%= @moves.count %>'>
   <div class= 'fav_and_jump_div'>
     <input id='move_count' type='text'>
-    <input type='submit' value='jump to'>
+    <input type='submit' value='Go!'>
+    <input id='play' type='submit' value='Play'>
+    <input id='stop' type='submit' value='Stop'>
   <div>
 
   <a class='move' id='0' href='rnbqkbnrpppppppp00000000000000000000000000000000PPPPPPPPRNBQKBNR'>Reset Board</a>
@@ -44,6 +46,5 @@
   <% end %>
   </table>
 </div>
-<%= 'blah' %>
 
 </div>

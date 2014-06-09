@@ -9,6 +9,25 @@ $(document).ready (function(){
     populateBoard(fen);
   })
 
+  $('#play').click(function() {
+    var iterate = setInterval(function() {
+      var currentMove = parseInt(getCurrentMove());
+      var totalMoves = getTotalMoves();
+      currentMove += 1;
+      console.log(currentMove);
+      setCurrentMove(currentMove.toString());
+      triggerClick(currentMove);
+
+      if (currentMove.toString() === totalMoves) {
+        clearInterval(iterate);
+      }
+    }, 500)
+  })
+
+  $('#stop').click(function() {
+
+  })
+
   $('a').click(function() {
     var currentMove = getCurrentMove();
     var totalMoves = getTotalMoves();

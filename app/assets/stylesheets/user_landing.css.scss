@@ -3,9 +3,6 @@
    margin: auto;
  }
 
-
-
-
 .user_landing {
   position: fixed;
   top: 100px;
@@ -29,7 +26,6 @@
   .user-info_div {
    @include fit-center;
   }
-
 }
 
 #my_name   {
@@ -37,13 +33,9 @@
   top:0;
 }
 
-
-
 #next-btn {
   float: right;
 }
-
-
 
 .btns {
    border-top: 1px solid #594517;
@@ -66,21 +58,15 @@
    font-family: 'Roboto', sans-serif;
    text-decoration: none;
    vertical-align: middle;
-   }
+}
+
 .btns:hover {
    border-top-color: #08090a;
    background: #08090a;
    color: #ccc;
-   }
+}
+
 .btns:active {
    border-top-color: #1b435e;
    background: #1b435e;
-   }
-
-
-
-
-
-
-
-
+}
